@@ -6,12 +6,7 @@
     <title>Productos — Admin Salinas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .nav-item { display:flex; align-items:center; gap:10px; padding:10px 16px; border-radius:10px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); cursor:pointer; transition:all .2s; text-decoration:none; }
-        .nav-item:hover { background:rgba(255,255,255,0.08); color:#fff; }
-        .nav-item.active { background:rgba(255,255,255,0.15); color:#fff; }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 </head>
 <body class="bg-[#f5f4f1]">
 <div class="flex h-screen overflow-hidden">

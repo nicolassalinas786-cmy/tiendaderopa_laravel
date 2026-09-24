@@ -7,13 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .step-line { transition: background 0.4s ease; }
-        .input-box { display: flex; align-items: center; gap: 10px; background: #f5f4f2; border-radius: 12px; padding: 12px 16px; }
-        .input-box input { flex: 1; background: transparent; border: none; outline: none; font-size: 14px; color: #1b1b18; }
-        .input-box input::placeholder { color: #aaa; }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
 </head>
 <body>
 

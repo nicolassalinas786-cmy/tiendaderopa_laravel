@@ -227,10 +227,4 @@ $metodoInfo = $iconos[$pedido['metodo_pago']] ?? $iconos['efectivo'];
 
 </div>
 
-<style>
-@keyframes drawCheck {
-    to { stroke-dashoffset: 0; }
-}
-</style>
-
 @endsection

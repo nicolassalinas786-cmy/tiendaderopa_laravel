@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Salinas Original - Estilos Generales de la Tienda
+   ========================================================================== */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animación para confirmación de pago */
+@keyframes drawCheck {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

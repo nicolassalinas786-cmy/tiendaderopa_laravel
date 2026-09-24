@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Salinas Original - Estilos de Autenticación (Login y Registro)
+   ========================================================================== */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.step-line {
+    transition: background 0.4s ease;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f5f4f2;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.input-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #1b1b18;
+}
+
+.input-box input::placeholder {
+    color: #aaa;
+}
