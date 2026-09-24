@@ -17,50 +17,23 @@ El proyecto cumple con los lineamientos de formación técnica del **SENA - Cent
 
 ---
 
-## 📚 Documentación Técnica Detallada (Índice de Documentos)
+## 📚 Documentación Técnica Detallada (`Documentacion/`)
 
-Toda la documentación técnica se encuentra modularizada en formato Markdown (`.md`) dentro del directorio [`docs/`](./docs/):
+Cada componente, controlador, modelo y funcionalidad cuenta con su propio archivo de documentación individual en la carpeta **[`Documentacion/`](./Documentacion/README.md)**:
 
-1. 🏛️ **[Arquitectura y Patrones de Diseño](./docs/01_ARQUITECTURA_Y_PATRONES.md)**: Explicación del patrón MVC, Eloquent ORM, Active Record, directivas Blade y modularización CSS.
-2. 🗄️ **[Base de Datos, Migraciones y Modelos](./docs/02_BASE_DE_DATOS_Y_MODELOS.md)**: Diagrama ER en Mermaid, diccionario de datos detallado y relaciones entre tablas.
-3. ⚙️ **[Módulos Funcionales y Controladores](./docs/03_MODULOS_Y_CONTROLADORES.md)**: Detalle de controladores de Autenticación, Catálogo, Carrito, Pagos, Pedidos, Devoluciones y Administración.
-4. 🔒 **[Rutas del Sistema y Mecanismos de Seguridad](./docs/04_RUTAS_Y_SEGURIDAD.md)**: Matriz completa de rutas HTTP (`routes/web.php`), protección CSRF, Bcrypt y control de acceso RBAC.
-5. 📋 **[Historias de Usuario (HDU) Oficiales](./docs/05_HISTORIAS_DE_USUARIO.md)**: Las 18 Historias de Usuario oficiales organizadas por Cliente y Administrador con criterios de aceptación.
-6. 🚀 **[Guía de Instalación y Despliegue Local](./docs/06_GUIA_DE_INSTALACION.md)**: Manual paso a paso para clonar, migrar, sembrar la base de datos y correr el proyecto con Laragon.
+* 🏛️ **[Modelos Eloquent](./Documentacion/README.md#-1-modelos-eloquent-documentacionmodels)** (`Usuario`, `Producto`, `Pedido`, `PedidoDetalle`, `Favorito`, `Role`).
+* ⚙️ **[Controladores](./Documentacion/README.md#️-2-controladores-documentacioncontrollers)** (`AuthController`, `CatalogoController`, `CarritoController`, `PagoController`, `Admin/`...).
+* 🛍️ **[Funcionalidades](./Documentacion/README.md#-3-funcionalidades-del-sistema-documentacionfuncionalidades)** (Login, Registro, Catálogo, Carrito, Checkout, Pedidos, Favoritos, Devoluciones, Panel Admin, Reportes).
+* 🔧 **[Sistema y Configuración](./Documentacion/README.md#-4-sistema-rutas-y-estilos-documentacionsistema)** (`rutas_web.md`, `migraciones_y_seeders.md`, `estilos_css.md`).
 
 ---
 
-## 🌟 Características Principales
-
-* 🔐 **Autenticación con Roles:** Inicio de sesión y registro de clientes con encriptación Bcrypt y separación de privilegios (Cliente y Administrador).
-* 🛍️ **Catálogo Dinámico:** Filtrado reactivo por categorías de ropa, búsqueda en tiempo real e indicador de disponibilidad por tallas.
-* 🛒 **Carrito de Compras:** Gestión persistente en sesión con Drawer lateral deslizante para agregar prendas, calcular subtotales y actualizar cantidades.
-* 💳 **Checkout y Simulación de Pago:** Proceso de pago con generación de comprobantes únicos y descuento automático de stock.
-* 📦 **Seguimiento de Pedidos:** Historial de compras para los clientes con seguimiento del estado del paquete (Pendiente, En Preparación, Enviado, Entregado).
-* 🔄 **Módulo de Devoluciones:** Solicitud de cambios de prenda y gestión de garantías de satisfacción.
-* 📊 **Panel Administrativo Integral (`/admin`):**
-  - Gestión de inventario (CRUD de productos con imágenes).
-  - Control de pedidos y cambio de estado logístico.
-  - Gráficos estadísticos de ventas en tiempo real con Chart.js.
-
----
-
-## 🔑 Credenciales de Acceso Rápido
+## 🔑 Credenciales de Acceso
 
 | Rol | Correo Electrónico | Contraseña | URL de Acceso |
 | :--- | :--- | :--- | :--- |
 | **Cliente** | `nicolas@salinasoriginal.com` | `nicolas123` | [`/login`](http://127.0.0.1:8000/login) |
 | **Administrador** | `admin@salinasoriginal.com` | `admin123` | [`/admin`](http://127.0.0.1:8000/admin) |
-
----
-
-## 🛠️ Tecnologías Empleadas
-
-* **Backend:** PHP 8.2+, Laravel 11.
-* **Base de Datos:** MySQL 8 / MariaDB.
-* **Frontend:** Laravel Blade, TailwindCSS, Vanilla CSS modularizado en `public/css/`.
-* **Gráficas:** Chart.js.
-* **Gestión del Proyecto:** Jira Software (Metodología Scrum), Git & GitHub.
 
 ---
 
